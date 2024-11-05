@@ -97,7 +97,7 @@ public class AttackBlockEvent {
             }
 
             if (PreventerClient.config.preventEnderChestBreaking) {
-                if (targetBlock instanceof EnderChestBlock) {
+                if (targetBlock instanceof ObsidianBlock) {
                     if (playerEntity.getMainHandStack().getItem() instanceof PickaxeItem) {
                         if (!EnchantmentHelper.hasAnyEnchantmentsIn(playerEntity.getMainHandStack(), EnchantmentTags.PREVENTS_BEE_SPAWNS_WHEN_MINING)) {
                             if (PreventerClient.config.preventEnderChestBreaking_msg) {
